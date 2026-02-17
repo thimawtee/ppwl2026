@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Definisikan nama file di paling atas agar bisa diakses semua fungsi
 const FILE_NAME = "notes.txt"
 const newNote = "This is a new note.happy coding!\n";
@@ -93,3 +94,29 @@ else {
   console.log("   Tambah      : bun run index.ts \"isi catatan\"");
   console.log("   Hapus       : bun run index.ts delete [nomor]");
 }
+=======
+import { Elysia } from "elysia";
+
+const app = new Elysia().listen(3000);
+app.get("/", () => "Hello via Bun!");
+
+console.log(`Elysia running at http://localhost:${app.server?.port}`);
+
+app.get("/hello/:name", ({ params }) => {
+  return {
+    message: `Halo ${params.name}!`,
+  };
+});
+
+app.post("/login", ({ body }) => {
+  const { email, password } = body as {
+    email: string;
+    password: string;
+  };
+
+  return {
+    success: true,
+    email
+  };
+});
+>>>>>>> 04c84079c5b091a9f3b571bf5d5bdae053689243
