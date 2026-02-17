@@ -1,22 +1,13 @@
 {
-<<<<<<< HEAD
-  "name": "dailynotes-project",
-=======
   "name": "ppwl",
->>>>>>> 04c84079c5b091a9f3b571bf5d5bdae053689243
   "module": "index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/node": "^25.2.3"
   },
   "peerDependencies": {
     "typescript": "^5"
-<<<<<<< HEAD
-=======
-  },
-  "dependencies": {
-    "elysia": "^1.4.22"
->>>>>>> 04c84079c5b091a9f3b571bf5d5bdae053689243
   }
 }
