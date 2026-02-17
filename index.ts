@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Definisikan nama file di paling atas agar bisa diakses semua fungsi
 const FILE_NAME = "notes.txt"
 const newNote = "This is a new note.happy coding!\n";
@@ -119,4 +118,4 @@ app.post("/login", ({ body }) => {
     email
   };
 });
->>>>>>> 04c84079c5b091a9f3b571bf5d5bdae053689243
+
