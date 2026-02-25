@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@layer components {
+  .tab-button {
+    @apply px-4 py-2 text-sm font-medium border-b-2 border-transparent
+           text-gray-500 hover:text-green-600 hover:border-green-400
+           transition;
+  }
+
+  .tab-active {
+    @apply border-green-600 text-green-600;
+  }
+}
